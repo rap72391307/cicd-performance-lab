@@ -1,0 +1,71 @@
+#  - on: runs CI on a push, pull request, or a manual click.
+#  - runs-on: starts a clean Linux machine supplied by GitHub.
+#  - steps: checks out your code, installs Python dependencies, then runs the same pytest command you ran locally.
+
+
+
+name: CI
+
+  on:
+    push:
+      branches: [main]
+    pull_request:
+      branches: [main]
+    workflow_dispatch:
+
+  permissions:
+    contents: read
+
+  jobs:
+    test:
+      name: Run tests
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Get the code
+          uses: actions/checkout@v4
+
+        - name: Set up Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: "3.9"
+
+        - name: Install test tools
+          run: python -m pip install -r requirements-dev.txt
+
+        - name: Run automated tests
+          run: python -m pytest
+
+
+name: CI
+
+  on:
+    push:
+      branches: [main]
+    pull_request:
+      branches: [main]
+    workflow_dispatch:
+
+  permissions:
+    contents: read
+
+  jobs:
+    test:
+      name: Run tests
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Get the code
+          uses: actions/checkout@v4
+
+        - name: Set up Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: "3.9"
+
+        - name: Install test tools
+          run: python -m pip install -r requirements-dev.txt
+
+        - name: Run automated tests
+          run: python -m pytest
+
