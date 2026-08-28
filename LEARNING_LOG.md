@@ -58,6 +58,10 @@ Expected: one commit appears, and Git reports a clean working tree.
 - 2026-08-28: The workspace began empty and was not a Git repository.
 - 2026-08-28: We chose GitHub Actions, Python, pytest, JMeter, then LRE as the
   progressive learning stack.
+- 2026-08-28: Lesson 1 completed. Initial commit `fc01f32` exists on `main`;
+  `git status` confirmed a clean working tree.
+- 2026-08-28: Lesson 2 application check completed locally with Python 3.9.6
+  and pytest 8.4.2: `1 passed`.
 
 ## Next lesson (do not start yet)
 
