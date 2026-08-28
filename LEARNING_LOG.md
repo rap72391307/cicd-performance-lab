@@ -62,6 +62,8 @@ Expected: one commit appears, and Git reports a clean working tree.
   `git status` confirmed a clean working tree.
 - 2026-08-28: Lesson 2 application check completed locally with Python 3.9.6
   and pytest 8.4.2: `1 passed`.
+- 2026-08-28: CI workflow committed as `0ed11c3` and the project remote was
+  configured with a dedicated SSH identity for GitHub account `rap72391307`.
 
 ## Next lesson (do not start yet)
 
