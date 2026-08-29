@@ -1,2 +1,3 @@
 def greeting(name: str) -> str:
-      return f"Hello, {name}!"
+    display_name = name or "World"
+    return f"Hello, {display_name}!"

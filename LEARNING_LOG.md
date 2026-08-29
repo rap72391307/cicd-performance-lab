@@ -64,6 +64,13 @@ Expected: one commit appears, and Git reports a clean working tree.
   and pytest 8.4.2: `1 passed`.
 - 2026-08-28: CI workflow committed as `0ed11c3` and the project remote was
   configured with a dedicated SSH identity for GitHub account `rap72391307`.
+- 2026-08-28: GitHub Actions CI passed after correcting YAML indentation. The
+  successful workflow commit was `8295dee`.
+- 2026-08-29: Pull-request CI passed for the default-greeting change. GitHub
+  warned that `actions/checkout@v4` and `actions/setup-python@v5` use the
+  deprecated Node.js 20 action runtime, so they will be upgraded to `v6`
+  (Node.js 24). This action runtime is separate from the Python application
+  version used by the tests.
 
 ## Next lesson (do not start yet)
 
